@@ -1,13 +1,85 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --clr-primary-100: rgb(243, 243, 243);
+  --clr-primary-200: rgb(27, 102, 121);
+  --clr-primary-300: rgb(19, 175, 167);
+  --clr-primary-600: rgb(12, 12, 12);
+  --clr-primary-700: white;
+  --clr-primary-800: white;
+
+  --ff-100: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-size: 1.25rem;
+  font-family: var(--ff-100);
+  color: var(--clr-primary-600);
+}
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.text-field {
+  height: 2rem;
+  width: 40%;
+  font-size: 1.25rem;
+}
+
+.btn {
+  border: 0;
+  background: var(--clr-primary-200);
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.25rem;
+  color: var(--clr-primary-100);
+  font-size: 1.25rem;
+}
+
+.btn-add {
+  margin-left: 0.5rem;
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  top: 0.05rem;
+}
+
+.btn-view {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-del {
+  margin-left: 1rem;
+}
+
+.btn:hover {
+  background: var(--clr-primary-300);
+}
+
+.input {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.input .text {
+  border: 2px solid black;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.title {
+  width: 80%;
 }
